@@ -1,17 +1,32 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-    int current_year, current_month, born, born_month, age_year, age_month;
+    int current_year, born, age_year;
+    string name;
+    char birthday;
+
+    cout << "\nWhat is your name? ";
+    cin >> name;
     cout << "\nWhat year is it currently? ";
     cin >> current_year;
-    cout << "\nWhat month is it currently?\nAnswer using digits: ";
-    cin >> current_month;
     cout << "\nWhat year were you born? ";
     cin >> born;
-    cout << "\nWhat month were you born?\nAnswer using digits: ";
-    cin >> born_month;
+
     age_year = current_year - born;
-    age_month = current_month - born_month;
-    cout << "\nYou are " << age_year << " years and " << age_month << " months old!" << endl;
+    cout << "\nDid you already have your birthday this year, " << name << "? (y/n) ";
+    cin >> birthday;
+    
+    switch(birthday)
+    {
+        case 'y':
+            cout << "\nYou are " << age_year << " years old. \n\nHappy belated birthday, " << name << "!\n\n";
+            break;
+        case 'n':
+            cout << "\nYou will turn " << age_year << " years old this year. \n\nHappy early birthday, " << name << "!\n\n";
+            break;
+        default:
+            cout << "\nSorry, what? \n\nExiting program because " << name << " can't follow simple directions. \nSmh humans...\n\n";
+    }
 }
