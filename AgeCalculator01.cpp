@@ -27,6 +27,6 @@ int main() {
             cout << "\nYou will turn " << age_year << " years old this year. \n\nHappy early birthday, " << name << "!\n\n";
             break;
         default:
-            cout << "\nSorry, what? \n\nExiting program because " << name << " can't follow simple directions. Smh humans...\n\n";
+            cout << "\nSorry, what? \n\nExiting program because " << name << " can't follow simple directions. \nSmh humans...\n\n";
     }
 }
