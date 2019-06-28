@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-<<<<<<< HEAD
 #include <unistd.h>
 using namespace std;
 
