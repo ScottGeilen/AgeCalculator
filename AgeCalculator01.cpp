@@ -51,6 +51,7 @@ int main() {
             default:
                 continue;
         }
+        
         looping = false;
         break;
     }
